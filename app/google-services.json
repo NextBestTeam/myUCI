@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "285647517581",
+    "firebase_url": "https://nextbestapp-c1877.firebaseio.com",
+    "project_id": "nextbestapp-c1877",
+    "storage_bucket": "nextbestapp-c1877.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:285647517581:android:542e66df395e410d",
+        "android_client_info": {
+          "package_name": "nextbest.myuci"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "285647517581-h56hnqi1clvb8u9sgcaf7mskeh496oav.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "nextbest.myuci",
+            "certificate_hash": "99c86a5fb52ff53e02f1140449e170faa2bb7cc9"
+          }
+        },
+        {
+          "client_id": "285647517581-l0ulmglb1kea1glj51ft3rm2lsh47hak.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUB7INtF9AJkgYow2zrU6ZHo_GsS1hMmM"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "285647517581-l0ulmglb1kea1glj51ft3rm2lsh47hak.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
