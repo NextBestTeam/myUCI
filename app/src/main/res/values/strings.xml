@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">MyUci</string>
+    <string name="SignUpToLogin">Already have an account? Login here</string>
+    <string name="LoginToSignUp">Not registered? Create an account here</string>
+    <string name="Email">Email</string>
+    <string name="Password">Password</string>
+    <string name="UserRegistration">User Registration</string>
+    <string name="SignUp">Sign Up</string>
+    <string name="Login">Login</string>
+    <string name="Logout">Logout</string>
+    <string name="Logo">Logo</string>
+    <string name="ProfilePhotoDescription">Profile Picture</string>
+    <string name="CreatePost">Create Post</string>
+    <string name="TitlePost">Title of Post</string>
+    <string name="PostDescription">Post Details</string>
+    <string name="DefaultName">Blank Name</string>
+    <string name="DefaultMajor">Update Major</string>
+    <string name="Number">Number</string>
+    <string name="DefaultPhone">Update Phone Number</string>
+    <string name="DefaultPost">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    </string>
+
+    <string name="action_editProfile">Edit Profile</string>
+    <string name="action_logout">Logout</string>
+
+
+</resources>
