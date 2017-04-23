@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<<<<<<< HEAD
           package="nextbest.myuci">
 
     <uses-permission android:name="android.permission.INTERNET"/>
+=======
+    package="nextbest.myuci">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+>>>>>>> eca1b0871ad4d0b4f6f11a98a44d41cc578be73e
 
     <application
         android:allowBackup="true"
@@ -13,6 +19,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
             <intent-filter>
+<<<<<<< HEAD
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
@@ -24,6 +31,17 @@
         <activity android:name=".CreatePostActivity"/>
         <activity android:name=".PostActivity">
         </activity>
+=======
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SignUpActivity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".EditProfileActivity" />
+        <activity android:name=".CreatePostActivity"></activity>
+>>>>>>> eca1b0871ad4d0b4f6f11a98a44d41cc578be73e
     </application>
 
 </manifest>

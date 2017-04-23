@@ -26,7 +26,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:adjustViewBounds="true"
+<<<<<<< HEAD
                 android:src="@drawable/marc"
+=======
+                android:src="@drawable/jason"
+>>>>>>> eca1b0871ad4d0b4f6f11a98a44d41cc578be73e
                 app:layout_collapseMode="parallax"
                 app:layout_collapseParallaxMultiplier="0.7" />
 
@@ -41,12 +45,17 @@
         </android.support.design.widget.CollapsingToolbarLayout>
     </android.support.design.widget.AppBarLayout>
 
+<<<<<<< HEAD
     <include layout="@layout/activity_scrolling_profile" android:id="@+id/include"/>
+=======
+    <include layout="@layout/activity_scrolling_profile" />
+>>>>>>> eca1b0871ad4d0b4f6f11a98a44d41cc578be73e
 
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/editProfileID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+<<<<<<< HEAD
 
 
         android:src="@drawable/createpost" app:layout_anchor="@+id/include"
@@ -60,6 +69,12 @@
 
         app:backgroundTint="#007399"
         app:layout_anchor="@+id/include"/>
+=======
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/createpost"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|end" />
+>>>>>>> eca1b0871ad4d0b4f6f11a98a44d41cc578be73e
 
 
 </android.support.design.widget.CoordinatorLayout>

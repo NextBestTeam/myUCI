@@ -19,8 +19,12 @@
     <string name="DefaultPhone">Update Phone Number</string>
     <string name="DefaultPost">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
         sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+<<<<<<< HEAD
         quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
     </string>
+=======
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+>>>>>>> eca1b0871ad4d0b4f6f11a98a44d41cc578be73e
 
     <string name="action_editProfile">Edit Profile</string>
     <string name="action_logout">Logout</string>

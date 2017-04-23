@@ -5,7 +5,10 @@
       <module fileurl="file://$PROJECT_DIR$/MyUci.iml" filepath="$PROJECT_DIR$/MyUci.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/myUCIHelp.iml" filepath="$PROJECT_DIR$/myUCIHelp.iml" />
+<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/nextbest.iml" filepath="$PROJECT_DIR$/nextbest.iml" />
+=======
+>>>>>>> eca1b0871ad4d0b4f6f11a98a44d41cc578be73e
     </modules>
   </component>
 </project>

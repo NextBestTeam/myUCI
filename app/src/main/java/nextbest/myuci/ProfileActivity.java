@@ -2,10 +2,19 @@ package nextbest.myuci;
 
 import android.app.Dialog;
 import android.content.Intent;
+<<<<<<< HEAD
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.AppCompatButton;
+=======
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.support.v7.widget.AppCompatButton;
+import android.support.v7.widget.DialogTitle;
+>>>>>>> eca1b0871ad4d0b4f6f11a98a44d41cc578be73e
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -15,6 +24,10 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+<<<<<<< HEAD
+=======
+import com.google.android.gms.common.api.GoogleApiClient;
+>>>>>>> eca1b0871ad4d0b4f6f11a98a44d41cc578be73e
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -23,6 +36,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
+<<<<<<< HEAD
 public class ProfileActivity extends AppCompatActivity implements View.OnClickListener {
     private FirebaseAuth mFirebaseAuth;
     private DatabaseReference mRef;
@@ -38,6 +52,19 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
     private Dialog d;
 
     private FloatingActionButton editProfileButton, postButton;
+=======
+public class ProfileActivity extends AppCompatActivity implements View.OnClickListener{
+    private FirebaseAuth mFirebaseAuth;
+    private DatabaseReference mRef;
+
+//    private EditText nameText, majorText, phoneText, levelText;
+    private EditText editTextName, editTextMajor, editTextPhone, editTextLevel;
+    private AppCompatButton appCompatButtonUpdate;
+
+    private Dialog d;
+
+    private FloatingActionButton editProfileButton;
+>>>>>>> eca1b0871ad4d0b4f6f11a98a44d41cc578be73e
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,11 +72,21 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         setContentView(R.layout.activity_profile);
 
         editProfileButton = (FloatingActionButton) findViewById(R.id.editProfileID);
+<<<<<<< HEAD
 
         postButton = (FloatingActionButton) findViewById(R.id.postButton);
 
         editProfileButton.setOnClickListener(this);
         postButton.setOnClickListener(this);
+=======
+//
+//       nameText = (EditText) findViewById(R.id.name);
+//        levelText = (EditText) findViewById(R.id.level);
+//        majorText = (EditText) findViewById(R.id.major);
+//        phoneText = (EditText) findViewById(R.id.phone);
+
+        editProfileButton.setOnClickListener(this);
+>>>>>>> eca1b0871ad4d0b4f6f11a98a44d41cc578be73e
 
         mFirebaseAuth = FirebaseAuth.getInstance();
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -59,6 +96,7 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         FirebaseUser user = mFirebaseAuth.getCurrentUser();
         DatabaseReference myRef = database.getReference().child("users").child(user.getUid());
 
+<<<<<<< HEAD
         mFirebaseAuth = FirebaseAuth.getInstance();
         nameText = (TextView) findViewById(R.id.nameUser);
         majorText = (TextView) findViewById(R.id.majorLevel);
@@ -93,6 +131,16 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
         myRef.addValueEventListener(postListener);
 
 
+=======
+//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.createPost);
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
+//            }
+//        });
+>>>>>>> eca1b0871ad4d0b4f6f11a98a44d41cc578be73e
     }
 
     @Override
@@ -111,6 +159,7 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_editProfile) {
+<<<<<<< HEAD
             startActivity(new Intent(this, EditProfileActivity.class));
         }
 
@@ -118,12 +167,22 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
             mFirebaseAuth.signOut();
             finish();
             startActivity(new Intent(this, MainActivity.class));
+=======
+            startActivity(new Intent(this,EditProfileActivity.class));
+        }
+
+        if (id == R.id.action_logout){
+            mFirebaseAuth.signOut();
+            finish();
+            startActivity(new Intent(this,MainActivity.class));
+>>>>>>> eca1b0871ad4d0b4f6f11a98a44d41cc578be73e
         }
 
         return super.onOptionsItemSelected(item);
     }
 
 
+<<<<<<< HEAD
 //    private void displayEditProfileDialog() {
 //        d = new Dialog(this);
 //        d.setTitle("Edit Profile");
@@ -202,6 +261,67 @@ public class ProfileActivity extends AppCompatActivity implements View.OnClickLi
             mRef.child(id).setValue(p);
             d.dismiss();
             Toast.makeText(getApplicationContext(), " Information Successfully updated" , Toast.LENGTH_SHORT).show();
+=======
+    private void displayEditProfileDialog(){
+        d = new Dialog(this);
+        d.setTitle("Edit Profile");
+        d.setContentView(R.layout.activity_edit_profile);
+
+        d.show();
+        int width = (int)(getResources().getDisplayMetrics().widthPixels*.90);
+        int height = (int)(getResources().getDisplayMetrics().heightPixels*.70);
+
+        d.getWindow().setLayout(width,height);
+
+        editTextName = (EditText) d.findViewById(R.id.name);
+        editTextLevel = (EditText) d.findViewById(R.id.level);
+        editTextMajor = (EditText) d.findViewById(R.id.major);
+        editTextPhone = (EditText) d.findViewById(R.id.phone);
+
+        appCompatButtonUpdate = (AppCompatButton) d.findViewById(R.id.updateProfile);
+        appCompatButtonUpdate.setOnClickListener(this);
+    }
+
+//    private void saveInformation(){
+//        String name = editTextName.getText().toString();
+//        String major = editTextMajor.getText().toString();
+//        String phone= editTextPhone.getText().toString();
+//        String level = editTextLevel.getText().toString();
+//
+//        User  mUser =  new User(name, major, level, phone);
+//
+//
+//        FirebaseUser user =  firebaseAuth.getCurrentUser();
+//        mRef  =  FirebaseDatabase.getInstance().getReference("users");
+//
+//        mRef.child(user.getUid()).setValue(mUser);
+//        Toast.makeText(this, " Information Successfully updated" , Toast.LENGTH_SHORT).show();
+//
+//    }
+
+    @Override
+    public void onClick(View v) {
+        if(v==editProfileButton){
+            displayEditProfileDialog();
+        }
+        if(v==appCompatButtonUpdate){
+            String name = editTextName.getText().toString();
+            String major = editTextMajor.getText().toString();
+            String phone= editTextPhone.getText().toString();
+            String level = editTextLevel.getText().toString();
+
+            User  mUser =  new User(name, major, level, phone);
+
+
+            FirebaseUser user =  mFirebaseAuth.getCurrentUser();
+            mRef  =  FirebaseDatabase.getInstance().getReference("users");
+            String Uid = mRef.push().getKey();
+
+
+
+            mRef.child(user.getUid()).setValue(mUser);
+            Toast.makeText(this, " Information Successfully updated" , Toast.LENGTH_SHORT).show();
+>>>>>>> eca1b0871ad4d0b4f6f11a98a44d41cc578be73e
 
         }
     }

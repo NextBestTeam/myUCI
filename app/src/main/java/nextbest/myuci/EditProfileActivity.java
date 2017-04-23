@@ -30,8 +30,16 @@ public class  EditProfileActivity extends AppCompatActivity  implements View.OnC
         setContentView(R.layout.activity_edit_profile);
 
         firebaseAuth =  FirebaseAuth.getInstance();
+<<<<<<< HEAD
         FirebaseUser user = firebaseAuth.getCurrentUser();
         nameText = (EditText) findViewById(R.id.nameUser);
+=======
+
+        //mRef  = FirebaseDatabase.getInstance().getReference();
+
+        FirebaseUser user = firebaseAuth.getCurrentUser();
+        nameText = (EditText) findViewById(R.id.name);
+>>>>>>> eca1b0871ad4d0b4f6f11a98a44d41cc578be73e
         majorText = (EditText) findViewById(R.id.major);
 
         phoneText = (EditText) findViewById(R.id.phone);
@@ -58,6 +66,11 @@ public class  EditProfileActivity extends AppCompatActivity  implements View.OnC
         mRef.child(user.getUid()).setValue(mUser);
         Toast.makeText(this, " Information Successfully updated" , Toast.LENGTH_SHORT).show();
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> eca1b0871ad4d0b4f6f11a98a44d41cc578be73e
     }
 
 

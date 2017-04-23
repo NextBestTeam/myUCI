@@ -5,15 +5,25 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.media.MediaPlayer;
 import android.net.Uri;
+<<<<<<< HEAD
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
+=======
+import android.support.annotation.NonNull;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+>>>>>>> eca1b0871ad4d0b4f6f11a98a44d41cc578be73e
 import android.support.v7.widget.AppCompatButton;
 import android.text.Editable;
 import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.EditText;
+<<<<<<< HEAD
+=======
+import android.widget.ProgressBar;
+>>>>>>> eca1b0871ad4d0b4f6f11a98a44d41cc578be73e
 import android.widget.TextView;
 import android.widget.Toast;
 import android.widget.VideoView;
@@ -23,6 +33,11 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
+<<<<<<< HEAD
+=======
+import org.w3c.dom.Text;
+
+>>>>>>> eca1b0871ad4d0b4f6f11a98a44d41cc578be73e
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     private VideoView videoView;

@@ -32,7 +32,11 @@ tools:showIn="@layout/activity_profile">
             android:src="@drawable/ic_phone_black" />
 
         <TextView
+<<<<<<< HEAD
             android:id="@+id/phoneNumber"
+=======
+            android:id="@+id/tvNumber1"
+>>>>>>> eca1b0871ad4d0b4f6f11a98a44d41cc578be73e
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
@@ -46,7 +50,11 @@ tools:showIn="@layout/activity_profile">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+<<<<<<< HEAD
             android:layout_below="@id/phoneNumber"
+=======
+            android:layout_below="@id/tvNumber1"
+>>>>>>> eca1b0871ad4d0b4f6f11a98a44d41cc578be73e
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             android:layout_marginStart="@dimen/activity_horizontal_margin"
             android:layout_marginTop="8dp"
@@ -92,7 +100,11 @@ tools:showIn="@layout/activity_profile">
             android:src="@drawable/ic_email_black" />
 
         <TextView
+<<<<<<< HEAD
             android:id="@+id/nameUser"
+=======
+            android:id="@+id/tvNumber3"
+>>>>>>> eca1b0871ad4d0b4f6f11a98a44d41cc578be73e
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
@@ -110,7 +122,11 @@ tools:showIn="@layout/activity_profile">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+<<<<<<< HEAD
             android:layout_below="@id/nameUser"
+=======
+            android:layout_below="@id/tvNumber3"
+>>>>>>> eca1b0871ad4d0b4f6f11a98a44d41cc578be73e
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             android:layout_marginStart="@dimen/activity_horizontal_margin"
             android:layout_marginTop="8dp"
@@ -156,7 +172,11 @@ tools:showIn="@layout/activity_profile">
             android:src="@drawable/ic_location_on_black" />
 
         <TextView
+<<<<<<< HEAD
             android:id="@+id/majorLevel"
+=======
+            android:id="@+id/tvNumber5"
+>>>>>>> eca1b0871ad4d0b4f6f11a98a44d41cc578be73e
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
@@ -169,12 +189,20 @@ tools:showIn="@layout/activity_profile">
             android:maxLines="1"
             android:text="Junior/Major"
             android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+<<<<<<< HEAD
             android:textColor="#212121"/>
+=======
+            android:textColor="#212121" />
+>>>>>>> eca1b0871ad4d0b4f6f11a98a44d41cc578be73e
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+<<<<<<< HEAD
             android:layout_below="@id/majorLevel"
+=======
+            android:layout_below="@id/tvNumber5"
+>>>>>>> eca1b0871ad4d0b4f6f11a98a44d41cc578be73e
             android:layout_marginLeft="@dimen/activity_horizontal_margin"
             android:layout_marginStart="@dimen/activity_horizontal_margin"
             android:layout_marginTop="8dp"
@@ -201,7 +229,45 @@ tools:showIn="@layout/activity_profile">
 
     </RelativeLayout>
 
+<<<<<<< HEAD
 
+=======
+    <include layout="@layout/item_divider" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send SMS" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:text="Call" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:text="Email" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="@dimen/activity_horizontal_margin"
+            android:text="Remove Contact" />
+
+    </LinearLayout>
+>>>>>>> eca1b0871ad4d0b4f6f11a98a44d41cc578be73e
 </LinearLayout>
 
 </android.support.v4.widget.NestedScrollView>

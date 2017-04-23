@@ -77,7 +77,11 @@
         android:inputType="textMultiLine"
         android:maxLines="2"
         app:layout_constraintBottom_toTopOf="@+id/guideline9"
+<<<<<<< HEAD
         app:layout_constraintHorizontal_bias="1.0"
+=======
+        app:layout_constraintHorizontal_bias="0.0"
+>>>>>>> eca1b0871ad4d0b4f6f11a98a44d41cc578be73e
         app:layout_constraintLeft_toLeftOf="@+id/guideline3"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline5"
@@ -127,12 +131,19 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+<<<<<<< HEAD
         app:layout_constraintVertical_bias="0.91"
+=======
+        app:layout_constraintVertical_bias="0.906"
+>>>>>>> eca1b0871ad4d0b4f6f11a98a44d41cc578be73e
         tools:layout_conversion_absoluteHeight="48dp"
         tools:layout_conversion_absoluteWidth="312dp"
         tools:layout_conversion_absoluteX="24dp"
         tools:layout_conversion_absoluteY="295dp" />
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> eca1b0871ad4d0b4f6f11a98a44d41cc578be73e
 </android.support.constraint.ConstraintLayout>
